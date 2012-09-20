@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:layout_marginTop="5dp"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/second_tab"
+        android:layout_width="95dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:gravity="center" />
+
+    <ImageButton
+        android:id="@+id/first_tab"
+        android:layout_width="105dp"
+        android:layout_height="35dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/second_tab"
+        android:background="@android:color/transparent"
+        android:gravity="center|left" />
+
+    <ImageButton
+        android:id="@+id/third_tab"
+        android:layout_width="99dp"
+        android:layout_height="35dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/first_tab"
+        android:background="@android:color/transparent"
+        android:fadingEdge="vertical"
+        android:gravity="center|left" />
+
+    <com.restaurantapp.pkg.LoginButton
+        android:id="@+id/fb_login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/login_button" />
+
+    <TextView
+        android:id="@+id/username_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@id/fb_login_btn"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:textColor="#3BB9FF" />
+
+</RelativeLayout>

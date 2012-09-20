@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <Button
+        android:id="@+id/fav_dialog_cancel_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/new_button"
+        android:text="Cancel"
+        android:textColor="@android:color/white" />
+
+    <ListView
+        android:id="@+id/listV_main"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fav_dialog_cancel_btn"
+        android:background="#F8F4A3" />
+
+</RelativeLayout>

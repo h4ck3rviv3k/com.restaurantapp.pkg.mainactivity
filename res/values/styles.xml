@@ -1,0 +1,54 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+
+    <style name="NewButton.Button" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/new_button</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">110dp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">bottom|center</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:shadowColor">#000000</item>
+    </style>
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+
+    <style name="sideButton.Button" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/new_button</item>
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">66dp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:shadowColor">#000000</item>
+    </style>
+
+    <style name="custom_titlebar">
+        <item name="android:windowTitleStyle">@style/title_bar</item>
+        <item name="android:windowTitleSize">35dp</item>
+        <item name="android:windowTitleBackgroundStyle">@style/title_background</item>
+    </style>
+
+    <style name="title_bar">
+        <item name="android:singleLine">false</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.WindowTitle</item>
+        <item name="android:shadowColor">#BB0000FF</item>
+        <item name="android:shadowRadius">2.75</item>
+    </style>
+
+    <style name="title_background">
+        <item name="android:background">@drawable/search_all_btn</item>
+    </style>
+
+    <style name="PauseDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/PauseDialogAnimation</item>
+    </style>
+
+    <style name="PauseDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+</resources>

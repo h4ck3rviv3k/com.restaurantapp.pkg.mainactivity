@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="80dip"
+        android:layout_height="100dip"
+        android:paddingLeft="10dip"
+        android:src="@drawable/drink" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Simple"
+        android:textColor="#000"
+        android:textSize="15px" />
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Simple"
+        android:textColor="#000"
+        android:textSize="15px" />
+
+</LinearLayout><!--
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="80dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="10dip"
+        android:scaleType="centerCrop"
+        android:src="@drawable/book" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/icon"
+        android:layout_below="@+id/icon"
+        android:gravity="center_horizontal"
+        android:text="Simple"
+        android:textColor="#000"
+        android:textSize="15px" />
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/title"
+        android:layout_below="@+id/title"
+        android:gravity="center_horizontal"
+        android:text="Simple"
+        android:textColor="#000"
+        android:textSize="15px" />
+
+</RelativeLayout>
+-->

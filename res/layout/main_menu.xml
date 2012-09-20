@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sub_content_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent_green" >
+
+    <TextView
+        android:id="@+id/Welcome_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Welcome to Ramada Restaurant"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <ImageView
+        android:id="@+id/clock_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/header_btn_bg"
+        android:padding="2dp"
+        android:src="@drawable/restaurant_food" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clock_show"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Click to Proceed"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <Gallery
+        android:id="@+id/gallery_img"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

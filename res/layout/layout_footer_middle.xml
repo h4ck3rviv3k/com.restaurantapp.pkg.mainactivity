@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="130dp"
+    android:layout_gravity="bottom|center_horizontal"
+    android:gravity="center" >
+
+    <Button
+        android:id="@+id/bottom_third_tab"
+        style="@style/NewButton.Button"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="0dp"
+        android:alpha="0.9"
+        android:background="@android:color/transparent"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/bottom_fourth_tab"
+        style="@style/NewButton.Button"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/bottom_third_tab"
+        android:alpha="0.9"
+        android:background="@android:color/transparent"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/bottom_fifth_tab"
+        style="@style/NewButton.Button"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/bottom_fourth_tab"
+        android:alpha="0.9"
+        android:background="@android:color/transparent"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/bottom_sixth_tab"
+        style="@style/NewButton.Button"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/bottom_fifth_tab"
+        android:alpha="0.9"
+        android:background="@android:color/transparent"
+        android:textSize="16sp" />
+
+</RelativeLayout>

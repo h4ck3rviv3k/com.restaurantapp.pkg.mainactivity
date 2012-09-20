@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/start_wall"
+    android:gravity="center" >
+
+    <Button
+        android:id="@+id/startbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap To Enter"
+        android:contentDescription="@string/content"
+        android:padding="@dimen/padding_medium"
+        android:src="@drawable/restaurant_food" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:visibility="visible"/>
+
+</LinearLayout>

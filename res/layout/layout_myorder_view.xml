@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:id="@+id/container"
+    android:layout_height="fill_parent"
+    android:background="#F1F1CD" >
+
+    <!-- Body -->
+
+    <TextView
+        android:id="@+id/myorder_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical|center"
+        android:text="My Order"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/myorder_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/myorder_backbtn"
+        android:layout_below="@id/myorder_title"
+        android:layout_margin="10dp"
+        android:background="#F1F1CD"
+        android:padding="5dp" >
+    </ListView>
+
+    <Button
+        android:id="@+id/myorder_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/likenadd_btn"
+        android:text="Order"
+        />
+
+    <!-- Footer -->
+
+    <TextView
+        android:id="@+id/myorder_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/likenadd_btn"
+        android:text="Total" />
+
+    <Button
+        android:id="@+id/myorder_backbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/likenadd_btn"
+        android:text="Cancel" />
+
+</RelativeLayout>

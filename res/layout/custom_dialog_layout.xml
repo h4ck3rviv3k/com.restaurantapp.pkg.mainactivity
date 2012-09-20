@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="600dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/drink_title_btn_bg" >
+
+    <LinearLayout
+        android:id="@+id/Dialog_img_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="650dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/pop_body"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/sel_item_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/paneer" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Dialog_img_layout"
+        android:background="@drawable/pop_detail" >
+
+        <TextView
+            android:id="@+id/food_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/food_detail" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/dialog_cancel_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/scroll_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/pop_foot"
+        android:text="+Add" />
+
+</RelativeLayout>

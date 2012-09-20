@@ -1,0 +1,20 @@
+
+    <TextSwitcher xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/textSwitcher1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <TextView
+            
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="@string/Menu"
+          
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:typeface="serif" >
+        </TextView>
+        <rotate ></rotate>
+
+    </TextSwitcher>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/front_wall" >
+
+    <!-- Header -->
+
+    <include
+        android:id="@+id/beverage_header"
+        layout="@layout/layout_header" />
+    <!-- body -->
+
+    <TextView
+        android:id="@+id/beveragelist_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/beverage_header"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="Title"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <ListView
+        android:id="@+id/beverageLV_main"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/myorder_footer"
+        android:layout_below="@id/beveragelist_title"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/list_bg"
+        android:smoothScrollbar="true" />
+
+    <!-- Footer -->
+
+    <LinearLayout
+        android:id="@+id/myorder_footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" >
+
+        <include layout="@layout/layout_footer_menu" />
+    </LinearLayout>
+
+</RelativeLayout>

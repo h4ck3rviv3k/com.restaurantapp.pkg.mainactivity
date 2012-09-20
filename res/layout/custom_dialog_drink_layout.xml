@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="560dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center" >
+
+    <LinearLayout
+        android:id="@+id/Dialog_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/drink_title_bg" >
+
+        <Button
+            android:id="@+id/dialog_cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textColor="@color/search_back" />
+
+        <TextView
+            android:id="@+id/Dialog_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:gravity="center"
+            android:text="title"
+            android:textColor="@android:color/background_light" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Dialog_img_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="650dp"
+        android:layout_below="@+id/Dialog_title_layout"
+        android:background="@drawable/pop_body"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/sel_item_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/paneer" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Dialog_img_layout"
+        android:background="@drawable/pop_detail" >
+
+        <TextView
+            android:id="@+id/food_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/food_detail" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/dialog_add_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/scroll_content"
+        android:background="@drawable/pop_foot"
+        android:text="+Add"
+        android:textColor="@color/search_back" />
+
+</RelativeLayout>
